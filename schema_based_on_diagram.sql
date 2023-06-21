@@ -46,3 +46,15 @@ ALTER TABLE invoices ADD CONSTRAINT FK_medical_history FOREIGN KEY(medical_histo
 ALTER TABLE invoice_items ADD CONSTRAINT FK_treatment FOREIGN KEY(treatment_id) REFERENCES treatments(id);
 
 ALTER TABLE invoice_items ADD CONSTRAINT FK_invoice FOREIGN KEY(invoice_id) REFERENCES invoices(id);
+
+CREATE INDEX ON history_and_treatments (medical_history_id);
+
+CREATE INDEX ON history_and_treatments (treatment_id);
+
+CREATE INDEX ON medical_histories (patient_id);
+
+CREATE INDEX ON invoices (medical_history_id);
+
+CREATE INDEX ON invoice_items (treatment_id);
+
+CREATE INDEX ON invoice_items (invoice_id);
