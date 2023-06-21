@@ -31,3 +31,18 @@ CREATE TABLE invoices(
 	PRIMARY KEY(id)
 );
 
+CREATE TABLE history_and_treatments (
+	medical_history_id INT, 
+	treatment_id INT, 
+	FOREIGN KEY (medical_history_id)REFERENCES medical_histories(id), 
+	FOREIGN KEY (treatment_id) REFERENCES treatments(id)
+);
+
+
+ALTER TABLE medical_histories ADD CONSTRAINT FK_patient FOREIGN KEY(patient_id) REFERENCES patients(id);
+
+ALTER TABLE invoices ADD CONSTRAINT FK_medical_history FOREIGN KEY(medical_history_id) REFERENCES medical_histories(id);
+
+ALTER TABLE invoice_items ADD CONSTRAINT FK_treatment FOREIGN KEY(treatment_id) REFERENCES treatments(id);
+
+ALTER TABLE invoice_items ADD CONSTRAINT FK_invoice FOREIGN KEY(invoice_id) REFERENCES invoices(id);
