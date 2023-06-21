@@ -27,7 +27,7 @@
 # 📖 A Class Clinic Database <a name="about-project"></a>
 
 
-**A Class Clinic Database** is a relational database based on postgreSQL for a A Class Clinic. It is based on a Entity Relationship Diagram  and has four tables which are; medical_histories, invoices, invoice-items, patients and treatments.
+**A Class Clinic Database** is a relational database based on PostgreSQL for A Class Clinic. It is based on an Entity Relationship Diagram  and has four tables which are; medical_histories, invoices, invoice-items, patients, and treatments.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -67,7 +67,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone git@github.com:Adams-Ghub/db-with-er-diagram.git
+  git clone git@github.com:Adams-Ghub/a-class-clinic-db.git
 ```
 
 ### Install
@@ -167,7 +167,7 @@ If you like this project share it with others
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse for providing reviewers who ensure that the best of this project was obtained
+We would like to thank Microverse for providing the schema diagram for the database development and also for reviewers who ensured that the best of this project was obtained
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
